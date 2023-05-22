@@ -1,6 +1,5 @@
 # EHC_SimpleLoginLogoutPHP
-Just A Simple Login And Logout Function using PHP
-Team 9 - CodeAndPunch
+Just A Simple Login And Logout Function using PHP (Team 9 - CodeAndPunch)
 ## Installation
 
 There are five steps to run this website:
