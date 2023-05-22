@@ -1,11 +1,12 @@
 <?php
 
-$is_invalid = false;
+$is_invalid = false; //Flag Variable
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST") { //Checking form sent?
     
-    $mysqli = require __DIR__ . "/database.php";
+    $mysqli = require __DIR__ . "/database.php"; //Including MySQL database
     
+    //Select users table from database then query
     $sql = sprintf("SELECT * FROM users
                     WHERE username = '%s'",
                    $mysqli->real_escape_string($_POST["username"]));
@@ -14,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
     $user = $result->fetch_assoc();
     
+    //Validate username and password
     if ($user) {
         
         if (password_verify($_POST["password"], $user["password_hash"])) {
@@ -28,10 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             exit;
         }
     }
-    
+    //Flag Successful
     $is_invalid = true;
 }
-
+    //Just Simple UI
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,11 +45,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
     
     <h1>Login</h1>
-
+<!-- Respond Error if Username or Password incorrect -->
     <?php if ($is_invalid): ?>
         <em>Username or Password may be incorrect</em>
     <?php endif; ?>
-    
+    <!-- Simple form to be fill data to login -->
     <form method="post">
         <label for="username">Username</label>
         <input type="username" name="username" id="username"
@@ -55,8 +57,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         
         <label for="password">Password</label>
         <input type="password" name="password" id="password">
-        
+        <!-- Submit Button -->
         <button>Log in</button>
+        <!-- Additional line -->
         <p>Don't have an account? <a href="signup">Click here</a></p>
     </form>
     

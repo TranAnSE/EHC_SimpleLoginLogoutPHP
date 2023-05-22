@@ -1,3 +1,4 @@
+<!-- UI page for signing up -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,7 @@
 <body>
     
     <h1>Signup</h1>
-    
+    <!-- Simple Sign up form -->
     <form action="signup-process" method="post" id="signup" novalidate>
         <div>
             <label for="name">Name</label>
@@ -31,8 +32,18 @@
             <input type="password" id="password_confirmation" name="password_confirmation">
         </div>
         
+        <!-- Submit Button -->
         <button>Sign up</button>
+
+        <!-- Additional Line -->
         <p>Already have an account <a href="login">Login here</a></p>
+        <br>
+
+        <!-- Policy -->
+        <p><b>*You must follow these requirements:</b></p>
+        <p>- Your name and username must not contain special character (*, $, @, etc.)</p>
+        <p>- Username must be at least 5 characters</p>
+        <p>- Password must be at least 8 characters and contain at least one letter or number</p>
     </form>
     
 </body>
