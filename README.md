@@ -44,8 +44,7 @@ If you have any questions or recommendations for the project, please [create an 
  * Don't have noctice when not clicked Agree Term of Service
  * ...
  * More & more....
-
-=======
+ 
 ## Demo 
 👉 [Click here](https://tqa24.name.vn)
 ## License
