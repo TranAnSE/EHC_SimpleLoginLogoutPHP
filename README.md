@@ -1,8 +1,5 @@
 # EHC_SimpleLoginLogoutPHP
 Just A Simple Login And Logout Function using PHP (Team 9 - CodeAndPunch)
-=======
-Just A Simple Login And Logout Function using PHP 
-(Team 9 - CodeAndPunch)
 ## Installation
 
 There are six steps to run this website:
@@ -28,7 +25,7 @@ The project covers these programming concepts:
 If you have any questions or recommendations for the project, please [create an issue](https://github.com/TranAnSE/EHC_SimpleLoginLogoutPHP/issues/new) or hit me up on TG [@AnOnTheMars](https://t.me/AnOnTheMars).
 
 ## Changelog
-1.1: Big Update
+1.1: Big Update (24/05/2023)
 - Optimize all UI/UX, responsive on many devices
 - Optimize algorithm
 - Sorting folders and files more not messy like before
@@ -44,8 +41,7 @@ If you have any questions or recommendations for the project, please [create an 
  * Don't have noctice when not clicked Agree Term of Service
  * ...
  * More & more....
-
-=======
+ 
 ## Demo 
 👉 [Click here](https://tqa24.name.vn)
 ## License
