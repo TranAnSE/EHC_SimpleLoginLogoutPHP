@@ -4,7 +4,6 @@ Just A Simple Login And Logout Function using PHP (Team 9 - CodeAndPunch)
 =======
 Just A Simple Login And Logout Function using PHP 
 (Team 9 - CodeAndPunch)
->>>>>>> 7b38a75f6d1bce3dc4ee27862f2bdccc9318df2e
 ## Installation
 
 There are five steps to run this website:
@@ -49,7 +48,6 @@ If you have any questions or recommendations for the project, please [create an 
 =======
 ## Demo 
 👉 [Click here](https://tqa24.name.vn)
->>>>>>> 7b38a75f6d1bce3dc4ee27862f2bdccc9318df2e
 ## License
 
 MIT
