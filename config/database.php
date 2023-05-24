@@ -3,8 +3,8 @@
 
 $host = "localhost";
 $dbname = "loginout";
-$username = "loginout";
-$password = "5SkZSarhkLacF2sC";
+$username = "root";
+$password = "";
 
 $mysqli = new mysqli($host, $username, $password, $dbname);
                      

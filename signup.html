@@ -1,59 +1,104 @@
-<!-- UI page for signing up -->
+<!-- Signin  Form -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Signup</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2.1.1/out/water.min.css">
-    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+</script>
+
 <body>
-    
-    <h1>Signup</h1>
-    <!-- Simple Sign up form -->
-    <form action="signup-process" method="post" id="signup" novalidate>
-        <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
-        </div>
-        
-        <div>
-            <label for="username">Username</label>
-            <input type="username" id="username" name="username">
-        </div>
-        
-        <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-        </div>
-        
-        <div>
-            <label for="password_confirmation">Repeat password</label>
-            <input type="password" id="password_confirmation" name="password_confirmation">
-        </div>
-        
-        <!-- Submit Button -->
-        <button>Sign up</button>
+    <div class="main">
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" action="signup-process" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"
+                                    pattern="/[^a-z0-9A-Z_\x{00C0}-\x{00FF}\x{1EA0}-\x{1EFF}]/u"
+                                    title="Maximum 32 characters. No symbol or number" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="username"><i class="zmdi zmdi-star-circle"></i></label>
+                                <input type="username" name="username" id="username" placeholder="Username"
+                                    pattern="^[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){5,32}[a-zA-Z0-9]$"
+                                    title="Only letters, numbers, and the underscore; at least 5 characters; no space"
+                                    required />
+                                <!--    [a-zA-Z0-9] an alphanumeric THEN (
 
-        <!-- Additional Line -->
-        <p>Already have an account <a href="login">Login here</a></p>
-        <br>
+                                        _(?!\.) a _ not followed by a . OR
+                                        
+                                        \.(?!_) a . not followed by a _ OR
+                                        
+                                        [a-zA-Z0-9] an alphanumeric ) FOR
+                                        
+                                        {5,32} minimum 5 to maximum 36 times THEN
+                                        
+                                        [a-zA-Z0-9] an alphanumeric -->
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="password"
+                                    placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}"
+                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="password_confirmation"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="password_confirmation"
+                                    id="password_confirmation" placeholder="Repeat your password" required />
+                            </div>
+                            
+                            <!-- Form with checkPass -->
+                            <!-- <div class="form-group">
+                                <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" onkeypress="checkPass()" name="password" id="password"
+                                    placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}"
+                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="password_confirmation"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" onkeypress="checkPass()" name="password_confirmation"
+                                    id="password_confirmation" placeholder="Repeat your password" required />
+                            </div> -->
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                                    statements in <a href="https://youtu.be/CY8E6N5Nzec" class="term-service">Terms of
+                                        service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="submit" id="submit" class="form-submit" value="Register" />
+                                <input type="reset" name="reset" id="reset" class="form-submit" value="Reset" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="login" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+        </section>
 
-        <!-- Policy -->
-        <p><b>*You must follow these requirements:</b></p>
-        <p>- Your name and username must not contain special character (*, $, @, etc.)</p>
-        <p>- Username must be at least 5 characters</p>
-        <p>- Password must be at least 8 characters and contain at least one letter or number</p>
-    </form>
-    
-</body>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+
 </html>
-
-
-
-
-
-
-
-
-

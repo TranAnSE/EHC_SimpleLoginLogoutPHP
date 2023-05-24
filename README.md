@@ -1,14 +1,13 @@
 # EHC_SimpleLoginLogoutPHP
-Just A Simple Login And Logout Function using PHP
-Team 9 - CodeAndPunch
+Just A Simple Login And Logout Function using PHP (Team 9 - CodeAndPunch)
 ## Installation
 
 There are five steps to run this website:
 
 1. Download the project to the desired directory on your computer
 2. Using XAMPP or WampServer to host it locally or can upload to online hosting.
-3. Create a MySQL database then import data.sql in phpMyAdmin.
-4. Configure database information in database.php.
+3. Create a MySQL database then import sample_database/data.sql to phpMyAdmin.
+4. Configure database information in config/config/database.php.
 5. Enjoy!
 
 ## Concepts
@@ -21,9 +20,26 @@ The project covers these programming concepts:
  * Fetching data from database
  * Pretty links *(/login) with fallback to query string (/login.php)*
  * Basic example of separation of concerns *(functionality, template, content)*
-
+ * Validation Full Name, Username, Password in form via regex
 If you have any questions or recommendations for the project, please [create an issue](https://github.com/TranAnSE/EHC_SimpleLoginLogoutPHP/issues/new) or hit me up on TG [@AnOnTheMars](https://t.me/AnOnTheMars).
 
+## Changelog
+1.1: Big Update
+- Optimize all UI/UX
+- Optimize algorithm
+- Sorting folders and files more not messy like before
+- Update policies, more security
+- Code more clean
+- Harmony design
+
+## Plan & Known Bug
+ * Insert password confirmation
+ * Improve code optimization such as notice when username have been taken, matching between primary password and password confirmation, etc.
+ * Optimize UI
+ * Login via Social Media such as Google, Facebook
+ * Don't have noctice when not clicked Agree Term of Service
+ * ...
+ * More & more
 ## License
 
 MIT
