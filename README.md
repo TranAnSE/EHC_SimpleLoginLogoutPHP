@@ -44,7 +44,8 @@ If you have any questions or recommendations for the project, please [create an 
  * Login via Social Media such as Google, Facebook
  * Don't have noctice when not clicked Agree Term of Service
  * ...
- * More & more
+ * More & more....
+
 =======
 ## Demo 
 👉 [Click here](https://tqa24.name.vn)
