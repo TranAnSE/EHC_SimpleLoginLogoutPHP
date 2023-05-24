@@ -1,5 +1,4 @@
 # EHC_SimpleLoginLogoutPHP
-<<<<<<< HEAD
 Just A Simple Login And Logout Function using PHP (Team 9 - CodeAndPunch)
 =======
 Just A Simple Login And Logout Function using PHP 
@@ -27,7 +26,6 @@ The project covers these programming concepts:
  * Validation Full Name, Username, Password in form via regex
 If you have any questions or recommendations for the project, please [create an issue](https://github.com/TranAnSE/EHC_SimpleLoginLogoutPHP/issues/new) or hit me up on TG [@AnOnTheMars](https://t.me/AnOnTheMars).
 
-<<<<<<< HEAD
 ## Changelog
 1.1: Big Update
 - Optimize all UI/UX
