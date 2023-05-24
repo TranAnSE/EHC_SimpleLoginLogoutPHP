@@ -5,13 +5,14 @@ Just A Simple Login And Logout Function using PHP
 (Team 9 - CodeAndPunch)
 ## Installation
 
-There are five steps to run this website:
+There are six steps to run this website:
 
 1. Download the project to the desired directory on your computer
 2. Using XAMPP or WampServer to host it locally or can upload to online hosting.
 3. Create a MySQL database then import sample_database/data.sql to phpMyAdmin.
 4. Configure database information in config/config/database.php.
-5. Enjoy!
+5. Change localhost to your website in signup-success.html
+6. Enjoy!
 
 ## Concepts
 
@@ -28,7 +29,7 @@ If you have any questions or recommendations for the project, please [create an 
 
 ## Changelog
 1.1: Big Update
-- Optimize all UI/UX
+- Optimize all UI/UX, responsive on many devices
 - Optimize algorithm
 - Sorting folders and files more not messy like before
 - Update policies, more security
